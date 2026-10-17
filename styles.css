@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 { text-align: center; }
+
+.input-group { display: flex; gap: 10px; margin-bottom: 10px; }
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+button:hover { background-color: #218838; }
+
+.stats {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 15px;
+    text-align: right;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+ul { list-style-type: none; padding: 0; }
+
+li {
+    background: #e9ecef;
+    margin: 8px 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+li.completed .note-text {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.note-text {
+    flex: 1;
+    cursor: pointer;
+    word-break: break-word;
+    margin-right: 10px;
+}
+
+.actions { display: flex; gap: 5px; }
+
+.actions button {
+    padding: 5px 10px;
+    font-size: 0.8em;
+    background-color: #007bff;
+}
+
+.actions button.delete-btn { background-color: #dc3545; }
+.actions button.delete-btn:hover { background-color: #c82333; }
+.actions button:hover { opacity: 0.9; }
